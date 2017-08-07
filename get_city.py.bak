@@ -1,0 +1,20 @@
+#get city
+
+#import requests
+
+#data = requests.get("http://www.cnblogs.com/xmyy/archive/2012/05/29/2523536.html")
+
+#print(data)
+
+#print(data.text)
+
+
+import urllib.request
+
+url = "http://www.cnblogs.com/xmyy/archive/2012/05/29/2523536.html"
+data = urllib.request.urlopen(url)
+
+data = data.read()
+
+print(data)
+
